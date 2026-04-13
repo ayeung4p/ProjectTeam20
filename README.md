@@ -1,4 +1,4 @@
-# COMP3111 Group Project -- Library Management System
+# Group Project -- Library Management System
 The Library Management System is designed to provide students, staff, authors, and librarians with efficient access to and management of library services. Authors can upload and track their books within the system. Students and staff are able to borrow, read, and return books, while librarians oversee user activities and manage the library’s collection.
 <br>
 
