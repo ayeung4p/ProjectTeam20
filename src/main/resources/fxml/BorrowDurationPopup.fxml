@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="213.0" prefWidth="450.0" spacing="10.0" style="-fx-padding: 20; -fx-background-color: #eeeeee; -fx-border-color: #ccc; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controllers.BorrowDurationPopupController">
+   
+   <!-- Duration Input -->
+   <VBox spacing="5">
+      <Label prefHeight="80.0" style="-fx-font-weight: bold;" text="Please enter the borrowing duration. (Minutes and seconds)">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="55.0" text="Minutes:" />
+            <TextField fx:id="durationMinField" prefHeight="35.0" promptText="Enter minutes" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="55.0" text="Seconds:" />
+            <TextField fx:id="durationSecField" prefHeight="35.0" promptText="Enter seconds" />
+         </children>
+      </HBox>
+      <Label style="-fx-text-fill: #999; -fx-font-size: 11px;" text="Max: 20160 minutes (14 days)" />
+      <Label fx:id="durationInvalidLabel" alignment="CENTER" prefHeight="14.0" prefWidth="414.0" text="not valid, please enter again" textAlignment="CENTER" textFill="RED" visible="false">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </VBox>
+   
+   <!-- Buttons -->
+   <HBox alignment="CENTER_RIGHT" spacing="10">
+      <Button onAction="#handleCancel" prefHeight="30" prefWidth="80" text="Cancel" />
+      <Button onAction="#handleConfirm" prefHeight="30" prefWidth="80" text="OK" />
+   </HBox>
+</VBox>

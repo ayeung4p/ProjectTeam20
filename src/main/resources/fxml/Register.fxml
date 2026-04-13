@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="600" spacing="10.0" style="-fx-background-repeat: stretch;-fx-background-position: center center;" styleClass="root-pane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controllers.RegisterController">
+    <Label fx:id="headerLabel" styleClass="header-label" text="Register">
+    <font>
+        <Font size="27.0" />
+    </font>
+    </Label>
+
+    <GridPane alignment="CENTER" hgap="10" prefWidth="520.0" vgap="10">
+        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <tooltip>
+            <Tooltip text="Must be between 4 and 30 characters long. You can use letters, numbers, ‘-’ or ‘_’." />
+         </tooltip></Label>
+        <TextField onAction="#handleRegister" fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+         <tooltip>
+            <Tooltip text="Must be at least 8 characters long and include numbers, uppercase and lowercase letters." />
+         </tooltip></Label>
+        <PasswordField onAction="#handleRegister" fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ToggleButton fx:id="viewPasswordBtn" maxHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleViewPassword" prefWidth="50.0" text="Show" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <TextField onAction="#handleRegister" fx:id="passwordTextField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Confirm Password:" GridPane.rowIndex="2" />
+        <PasswordField onAction="#handleRegister" fx:id="confirmPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ToggleButton fx:id="viewConfirmPasswordBtn" maxHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleViewConfirmPassword" prefWidth="50.0" text="Show" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <TextField onAction="#handleRegister" fx:id="confirmPasswordTextField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="Full Name: " GridPane.rowIndex="3">
+         <tooltip>
+            <Tooltip text="Length must be 2 to 50 characters." />
+         </tooltip></Label>
+      <TextField onAction="#handleRegister" fx:id="fullNameField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <Label fx:id="toastLabel" style="-fx-text-fill: red; -fx-font-size: 14px; -fx-alignment: center;" visible="false">
+      <VBox.margin>
+         <Insets bottom="5.0" top="10.0" />
+      </VBox.margin></Label>
+    <Button onAction="#handleUsernamePasswordRequirement" style="-fx-background-color:transparent; -fx-underline:true;" text="Username and Password Requirements" textFill="#906d6d">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+    <Button onAction="#handleRegister" prefHeight="40" prefWidth="150" text="Register" />
+    <Button onAction="#handleBack" prefHeight="30" prefWidth="100" text="Back" />
+
+    <!-- New Login link: -->
+    <Button onAction="#handleGoToLogin" style="-fx-background-color:transparent; -fx-underline:true;" text="Have an account? Login" />
+    <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+    </padding>
+</VBox>

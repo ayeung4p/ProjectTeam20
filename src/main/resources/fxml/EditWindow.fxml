@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controllers.EditWindowController">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="218.0" prefWidth="566.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="92.4" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="515.1999816894531" minWidth="10.0" prefWidth="473.20000000000005" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="145.6" minHeight="10.0" prefHeight="112.39998779296874" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="196.99999465942383" minHeight="10.0" prefHeight="106.00001220703123" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="New Title:" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <Label text="New Abstract:" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="86.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="authorEditTitleField" prefHeight="25.0" prefWidth="474.0" GridPane.columnIndex="1" />
+            <TextArea fx:id="authorEditAbstractField" prefHeight="137.0" prefWidth="474.0" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="69.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="authorEditCancel" mnemonicParsing="false" onAction="#handleAuthorEditCancel" prefHeight="30.0" prefWidth="70.0" text="Cancel" />
+            <Button fx:id="authorEditSave" mnemonicParsing="false" onAction="#handleAuthorEditSave" prefHeight="30.0" prefWidth="70.0" text="Save" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <Label prefHeight="50.0" prefWidth="586.0" text="Edit Fields you wish to change:" BorderPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
