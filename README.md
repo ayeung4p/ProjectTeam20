@@ -5,12 +5,8 @@ The Library Management System is designed to provide students, staff, authors, a
 **Team Information**
 <br>
 Team ID: 20
+Team Memebers: Lai Cheuk Ying, Yeung Man Yan, Cheung Hin Lung
 
-| Name            | Student ID | GitHub User Id.  | UST Email                 | Is Team Leader? | Owner of Team Repo? | Responsible Task               |
-|-----------------|------------|------------------|---------------------------|-----------------|---------------------|--------------------------------|
-| Lai Cheuk Ying  | 21055371   | cherrylcy        | cylaiaz@connect.ust.hk    | yes             | yes                 | Task # 3: Librarian Portal     |
-| Yeung Man Yan   | 21052226   | ayeung4p         | myyeungaa@connect.ust.hk  | no              | no                  | Task # 1: Student/Staff Portal |
-| Cheung Hin Lung | 21050254   | JasonCheungHKUST | hlcheungap@connect.ust.hk | no              | no                  | Task # 2: Author Portal        |
 
 **Project Information**
 <br>
