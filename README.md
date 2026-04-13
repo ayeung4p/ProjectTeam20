@@ -61,7 +61,7 @@ Project/
 **Installation**
 1. Clone the project
 
-Clone or download the project from https://github.com/cherrylcy/Comp3111ProjectTeam20 and open it in IntelliJ IDEA.
+Clone or download the project from https://github.com/ayeung4p/ProjectTeam20 and open it in IntelliJ IDEA.
 
 2. Run the main program
 
